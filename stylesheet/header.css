@@ -1,0 +1,29 @@
+.navbar-collapse{
+    justify-content: flex-end;
+}
+.nav-link{
+    background-color: #0076aa;
+    padding: 6px 20px !important;
+    border: 1px solid #0076aa;
+    border-radius: 20px;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #fff;
+    margin-left: 20px;
+    display: inline-block;
+}
+.nav-link:hover , .nav-link.active{
+    background-color: transparent;
+    color: #0076aa;
+}
+/*responsive*/
+@media only screen and (max-width: 767px){
+.nav-link{
+    margin-top: 10px;
+    background-color: transparent;
+    color: #0076aa;
+    border: 0;
+}
+}
+

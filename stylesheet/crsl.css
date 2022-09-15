@@ -1,0 +1,38 @@
+
+.swipe-slide-div {
+    display: flex;
+    overflow: visible;
+    max-width: 100%;
+    position: relative;
+}
+
+.swipe-slide {
+    backface-visibility: hidden;
+    transform: translate(0px, 0px);
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    text-align: center;
+}
+
+.swipe-slide>* {
+    display: inline-block !important;
+    vertical-align: top;
+    white-space: normal;
+    text-align: left;
+    margin: 0 7px;
+}
+
+.swipe-slide{
+   scrollbar-width: none;
+}
+.swipe-slide::-webkit-scrollbar {
+     /* This is the magic bit for WebKit */
+     display: none;
+}
+
+@media only screen and (max-width: 767px){
+    .swipe-slide-div {
+        padding: 0px;
+    }
+}
