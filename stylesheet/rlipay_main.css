@@ -313,7 +313,9 @@
      .banner-img {
          width: 100%;
      }
-
+     .mobile-block{
+        display: block;
+     }
      .cruslList img {
          min-height: 150px;
      }
@@ -371,6 +373,24 @@
      .next i {
          font-size: 12px;
      }
+     footer {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    footer .container {
+        flex-direction: column !important;
+        width: 80%;
+    }
+    footer .container > div{
+        max-width: 100%;
+        width: 100%;
+
+    }
+
+    footer .container .px-0.font-13 {
+        text-align: right;
+    }
  }
 
  @media only screen and (width: 768px) {
